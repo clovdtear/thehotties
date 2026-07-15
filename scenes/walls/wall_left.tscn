@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dv4swgx7s1lab"]
+
+[ext_resource type="Texture2D" uid="uid://cjqdpsjobk10" path="res://images/walls/left.jpg" id="1_wdiup"]
+
+[node name="WallLeft" type="Node2D" unique_id=1433328317]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=93475802]
+position = Vector2(960, 540)
+texture = ExtResource("1_wdiup")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=619731316]
+offset_right = 251.0
+offset_bottom = 111.0
+text = "LEFT"

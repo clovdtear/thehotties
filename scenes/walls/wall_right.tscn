@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c2kiam0wcmeao"]
+
+[ext_resource type="Texture2D" uid="uid://bb1skg0gt3iux" path="res://images/walls/right.jpg" id="1_6rjib"]
+
+[node name="WallRight" type="Node2D" unique_id=1427750135]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1137968356]
+position = Vector2(960, 540)
+texture = ExtResource("1_6rjib")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=877630148]
+offset_right = 251.0
+offset_bottom = 111.0
+text = "RIGHT"

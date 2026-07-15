@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://d4jkdwcdnn60o"]
+
+[ext_resource type="Texture2D" uid="uid://bydivu7fk513n" path="res://images/walls/back.jpg" id="1_k0g54"]
+
+[node name="WallBack" type="Node2D" unique_id=839691736]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1918877713]
+position = Vector2(960, 540)
+texture = ExtResource("1_k0g54")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=39426923]
+offset_right = 251.0
+offset_bottom = 111.0
+text = "BACK"

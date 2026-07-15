@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cdpip5rssiiiy"]
+
+[ext_resource type="Texture2D" uid="uid://ds85ykh6jdnl6" path="res://images/walls/front.jpg" id="1_t87f0"]
+
+[node name="WallFront" type="Node2D" unique_id=1450898132]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=384820629]
+position = Vector2(960, 540)
+texture = ExtResource("1_t87f0")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=2113945321]
+offset_right = 251.0
+offset_bottom = 111.0
+text = "FRONT"
