@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="thehotties"
-run/main_scene="uid://cdpip5rssiiiy"
+run/main_scene="uid://bv8es6tpaviuh"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://cn0udu30c80wo"
 
 [display]
 

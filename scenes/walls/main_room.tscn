@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://bv8es6tpaviuh"]
 
-[ext_resource type="Script" uid="uid://dd0tjcfhxjypa" path="res://scripts/main_room.gd" id="1_aege8"]
+[ext_resource type="Script" uid="uid://dd0tjcfhxjypa" path="res://scripts/MainRoom.gd" id="1_aege8"]
 [ext_resource type="Texture2D" uid="uid://cx1di624hfrsk" path="res://images/ui/left_arrow_normal.png" id="2_xpuep"]
 [ext_resource type="Texture2D" uid="uid://bp3358jdj5no0" path="res://images/ui/left_arrow_pressed.png" id="3_atuuc"]
 [ext_resource type="Texture2D" uid="uid://dromr35gmxtcp" path="res://images/ui/left_arrow_hovering.png" id="4_n3klp"]
 [ext_resource type="Texture2D" uid="uid://bsgyxdrwvc8ty" path="res://images/ui/right_arrow_normal.png" id="5_4dt4b"]
 [ext_resource type="Texture2D" uid="uid://cax1sqmro4mwq" path="res://images/ui/right_arrow_pressed.png" id="6_q66ex"]
 [ext_resource type="Texture2D" uid="uid://ceoymkv3m443u" path="res://images/ui/right_arrow_hovering.png" id="7_i3cj1"]
+[ext_resource type="PackedScene" uid="uid://ddqbgk2wlghfi" path="res://scenes/ui/hotbar.tscn" id="8_atuuc"]
 
 [node name="MainRoom" type="Node2D" unique_id=1829233028]
 script = ExtResource("1_aege8")
@@ -14,6 +15,7 @@ script = ExtResource("1_aege8")
 [node name="WallContainer" type="Sprite2D" parent="." unique_id=589999709]
 
 [node name="LeftArrow" type="TextureButton" parent="." unique_id=1658490837]
+z_index = 20
 offset_left = 50.0
 offset_top = 400.0
 offset_right = 947.0
@@ -24,6 +26,7 @@ texture_pressed = ExtResource("3_atuuc")
 texture_hover = ExtResource("4_n3klp")
 
 [node name="RightArrow" type="TextureButton" parent="." unique_id=86904607]
+z_index = 20
 offset_left = 1012.0
 offset_top = 400.0
 offset_right = 1907.0
@@ -32,6 +35,14 @@ scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("5_4dt4b")
 texture_pressed = ExtResource("6_q66ex")
 texture_hover = ExtResource("7_i3cj1")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=315663629]
+
+[node name="Hotbar" parent="UI" unique_id=739085315 instance=ExtResource("8_atuuc")]
+offset_left = 250.0
+offset_top = 500.0
+offset_right = 950.0
+offset_bottom = 600.0
 
 [connection signal="pressed" from="LeftArrow" to="." method="_on_left_arrow_pressed"]
 [connection signal="pressed" from="RightArrow" to="." method="_on_right_arrow_pressed"]

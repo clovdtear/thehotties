@@ -1,14 +1,61 @@
 [gd_scene format=3 uid="uid://cdpip5rssiiiy"]
 
 [ext_resource type="Texture2D" uid="uid://ds85ykh6jdnl6" path="res://images/walls/front.jpg" id="1_t87f0"]
+[ext_resource type="Texture2D" uid="uid://s5x5cl1ydrmx" path="res://images/furniture/display.jpg" id="2_ta5fa"]
+[ext_resource type="Texture2D" uid="uid://dtc2lfqjougs0" path="res://images/furniture/counter_flip_up.png" id="3_2geap"]
+[ext_resource type="Texture2D" uid="uid://c1gobdaci7mfn" path="res://images/furniture/counter.png" id="3_5b7ne"]
+[ext_resource type="Texture2D" uid="uid://nvbfttmhqduj" path="res://images/objects/tip_jar.jpeg" id="5_b0pu4"]
+[ext_resource type="Texture2D" uid="uid://ckfhes32r7g15" path="res://images/objects/laptop.png" id="5_uidr5"]
+[ext_resource type="Texture2D" uid="uid://bt806tg7otefi" path="res://images/objects/cash_register.png" id="6_b0pu4"]
 
 [node name="WallFront" type="Node2D" unique_id=1450898132]
 
 [node name="Background" type="Sprite2D" parent="." unique_id=384820629]
-position = Vector2(960, 540)
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_t87f0")
 
 [node name="TextEdit" type="TextEdit" parent="." unique_id=2113945321]
 offset_right = 251.0
 offset_bottom = 111.0
 text = "FRONT"
+
+[node name="Furniture" type="Node2D" parent="." unique_id=1371692580]
+
+[node name="Display" type="Sprite2D" parent="Furniture" unique_id=139210180]
+z_index = 5
+position = Vector2(168, 549)
+scale = Vector2(0.7, 0.55)
+texture = ExtResource("2_ta5fa")
+
+[node name="CounterFlipUp" type="Sprite2D" parent="Furniture" unique_id=1044349593]
+z_index = 5
+position = Vector2(473, 499)
+scale = Vector2(0.2, 0.1)
+texture = ExtResource("3_2geap")
+
+[node name="Counter" type="Sprite2D" parent="Furniture" unique_id=1167188588]
+z_index = 5
+position = Vector2(904, 520)
+scale = Vector2(2, 2)
+texture = ExtResource("3_5b7ne")
+
+[node name="Objects" type="Node2D" parent="." unique_id=1153682039]
+
+[node name="TipJar" type="Sprite2D" parent="Objects" unique_id=1603002251]
+z_index = 10
+position = Vector2(803, 413)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_b0pu4")
+
+[node name="Laptop" type="Sprite2D" parent="Objects" unique_id=1961002900]
+z_index = 10
+position = Vector2(683, 410)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_uidr5")
+
+[node name="CashRegister" type="Sprite2D" parent="Objects" unique_id=1993812326]
+z_index = 10
+position = Vector2(999, 428)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("6_b0pu4")

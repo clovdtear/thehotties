@@ -12,6 +12,10 @@ var wall_instance
 
 func _ready():
 	change_wall(current_wall)
+	
+	for item in GameManager.inventory:
+		if item:
+			print(item.item_name)
 
 func change_wall(number):
 	if wall_instance:

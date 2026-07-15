@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://dv4swgx7s1lab"]
 
-[ext_resource type="Texture2D" uid="uid://cjqdpsjobk10" path="res://images/walls/left.jpg" id="1_wdiup"]
+[ext_resource type="Texture2D" uid="uid://ds85ykh6jdnl6" path="res://images/walls/front.jpg" id="1_wdiup"]
 
 [node name="WallLeft" type="Node2D" unique_id=1433328317]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=93475802]
-position = Vector2(960, 540)
+[node name="Background" type="Sprite2D" parent="." unique_id=661084629]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wdiup")
 
 [node name="TextEdit" type="TextEdit" parent="." unique_id=619731316]

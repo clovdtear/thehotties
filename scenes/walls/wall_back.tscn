@@ -1,14 +1,61 @@
 [gd_scene format=3 uid="uid://d4jkdwcdnn60o"]
 
-[ext_resource type="Texture2D" uid="uid://bydivu7fk513n" path="res://images/walls/back.jpg" id="1_k0g54"]
+[ext_resource type="Texture2D" uid="uid://ds85ykh6jdnl6" path="res://images/walls/front.jpg" id="1_k0g54"]
+[ext_resource type="Texture2D" uid="uid://ry3nsokj5bx2" path="res://images/furniture/plant_shelves.png" id="2_fbhmu"]
+[ext_resource type="Texture2D" uid="uid://but1fvbp72u41" path="res://images/objects/plant1.png" id="3_3c0jw"]
+[ext_resource type="Texture2D" uid="uid://crsyk37qmserp" path="res://images/objects/plant2.png" id="4_rixq0"]
+[ext_resource type="Texture2D" uid="uid://duqcx2gu11gfc" path="res://images/objects/plant3.png" id="5_ffv3k"]
+[ext_resource type="Texture2D" uid="uid://ou0bcok3y7ic" path="res://images/objects/plant4.png" id="6_0md43"]
+[ext_resource type="Texture2D" uid="uid://b2l65hedpmkxk" path="res://images/objects/plant5.png" id="7_rwknw"]
 
 [node name="WallBack" type="Node2D" unique_id=839691736]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1918877713]
-position = Vector2(960, 540)
+[node name="Background" type="Sprite2D" parent="." unique_id=211531626]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_k0g54")
 
 [node name="TextEdit" type="TextEdit" parent="." unique_id=39426923]
 offset_right = 251.0
 offset_bottom = 111.0
 text = "BACK"
+
+[node name="Furniture" type="Node2D" parent="." unique_id=1447652485]
+
+[node name="Plant_Shelves" type="Sprite2D" parent="Furniture" unique_id=2010641676]
+z_index = 5
+position = Vector2(570, 380)
+scale = Vector2(2, 1.5)
+texture = ExtResource("2_fbhmu")
+
+[node name="Objects" type="Node2D" parent="." unique_id=57143128]
+
+[node name="Plant1" type="Sprite2D" parent="Objects" unique_id=582795329]
+z_index = 10
+position = Vector2(284, 221)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_3c0jw")
+
+[node name="Plant2" type="Sprite2D" parent="Objects" unique_id=797184909]
+z_index = 10
+position = Vector2(440, 374)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_rixq0")
+
+[node name="Plant3" type="Sprite2D" parent="Objects" unique_id=1638874069]
+z_index = 10
+position = Vector2(798, 522)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_ffv3k")
+
+[node name="Plant4" type="Sprite2D" parent="Objects" unique_id=1364925556]
+z_index = 10
+position = Vector2(839, 205)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_0md43")
+
+[node name="Plant5" type="Sprite2D" parent="Objects" unique_id=388750578]
+z_index = 10
+position = Vector2(677, 520)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_rwknw")
