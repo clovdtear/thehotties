@@ -1,6 +1,6 @@
 extends Node
 
-var inventory = [
+var hotbar = [
 	preload("res://resources/items/pot.tres"),
 	preload("res://resources/items/dirt.tres"),
 	preload("res://resources/items/seed.tres"),
@@ -10,4 +10,11 @@ var inventory = [
 	null
 ]
 
-var world = {}
+var storage = [
+	null, null, null, null, null,
+	null, null, null, null, null,
+	null, null, null, null, null
+]
+
+var selected_slot = 0
+var selected_item = null

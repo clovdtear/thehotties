@@ -1,5 +1,17 @@
 extends Node2D
 
+@onready var storage = $UI/StorageInventory
+
+func _unhandled_input(event):
+
+	if event.is_action_pressed("ui_accept"):
+
+		if storage.visible:
+			storage.visible = false
+		else:
+			storage.visible = true
+			storage.update_storage()
+
 var walls = [
 	preload("res://scenes/walls/wall_front.tscn"),
 	preload("res://scenes/walls/wall_right.tscn"),
@@ -13,7 +25,7 @@ var wall_instance
 func _ready():
 	change_wall(current_wall)
 	
-	for item in GameManager.inventory:
+	for item in GameManager.hotbar:
 		if item:
 			print(item.item_name)
 
