@@ -4,43 +4,33 @@ extends Resource
 @export var character_id : String = "Student"
 @export var spawn_hour : int = 9
 
-# Entire dialogue database for this character.
-@export var dialogue_sets : Dictionary = {
+class_name CustomerEvent
+extends Resource
 
-	# Used only if the player has never met them.
-"first_meeting": {
-	"start": {
-		"text": "Morning! Name's Student",
-		"responses": [
-			{
-				"text":"Welcome! First visit?",
-				"next":"friendly",
-				"flag":"friendly"
-			},
-			{
-				"text":"What can I get you?",
-				"next":"neutral",
-				"flag":"neutral"
-			},
-			{
-				"text":"You're wasting my time.",
-				"next":"rude",
-				"flag":"rude"
-			}
-		]
-	},
+@export var character_id := "Student"
 
-	"friendly":{
-		"text":"Ha! I knew I'd like this place."
-	},
+@export var conversations := {
 
-	"neutral":{
-		"text":"..."
-	},
+	"intro_day0": { },
 
-	"rude":{
-		"text":"...Right."
-	}
-}
+	"intro_day1": { },
+
+	"checkin_day1": { },
+
+	"day3": { },
+
+	"day7_good": { },
+
+	"day7_bad": { },
+
+	"day11_good": { },
+
+	"day11_bad": { },
+
+	"ending_good": { },
+
+	"ending_neutral": { },
+
+	"ending_bad": { }
 
 }
