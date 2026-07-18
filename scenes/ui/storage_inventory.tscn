@@ -1,14 +1,16 @@
 [gd_scene format=3 uid="uid://c1boilarliqme"]
 
-[ext_resource type="Script" uid="uid://dqi6t6bneuy25" path="res://scripts/StorageInventory.gd" id="1_rbjhl"]
+[ext_resource type="Script" uid="uid://dqi6t6bneuy25" path="res://scripts/ui/StorageInventory.gd" id="1_rbjhl"]
 [ext_resource type="PackedScene" uid="uid://b6k4j8ktrvtgx" path="res://scenes/ui/inventory_slot.tscn" id="2_l1gmm"]
 
 [node name="StorageInventory" type="Panel" unique_id=921784344]
+z_index = 20
 offset_right = 416.0
 offset_bottom = 248.0
 script = ExtResource("1_rbjhl")
 
 [node name="GridContainer" type="GridContainer" parent="." unique_id=1609113288]
+z_index = 20
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0

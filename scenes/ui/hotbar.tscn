@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://ddqbgk2wlghfi"]
 
-[ext_resource type="Script" uid="uid://d3pr7ke3gdod8" path="res://scripts/Hotbar.gd" id="1_m1s8h"]
+[ext_resource type="Script" uid="uid://d3pr7ke3gdod8" path="res://scripts/ui/Hotbar.gd" id="1_m1s8h"]
 [ext_resource type="PackedScene" uid="uid://b6k4j8ktrvtgx" path="res://scenes/ui/inventory_slot.tscn" id="2_6hkf2"]
 
 [node name="Hotbar" type="HBoxContainer" unique_id=739085315]
+z_index = 20
 custom_minimum_size = Vector2(700, 100)
 offset_right = 40.0
 offset_bottom = 40.0
