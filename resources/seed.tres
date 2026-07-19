@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://du1xjbk2hcka8"]
+
+[ext_resource type="Texture2D" uid="uid://qmrafw0yphdb" path="res://images/usable items/seeds/seeds/bleeding_heart.png" id="1_rs5eu"]
+[ext_resource type="Script" uid="uid://csusqn6c0h5si" path="res://scripts/data/ItemData.gd" id="2_mj7oq"]
+
+[resource]
+script = ExtResource("2_mj7oq")
+id = "seed"
+item_name = "Seed"
+icon = ExtResource("1_rs5eu")
+metadata/_custom_type_script = "uid://csusqn6c0h5si"

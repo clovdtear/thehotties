@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dwgq0ry8dn385"]
+
+[ext_resource type="Texture2D" uid="uid://coa6jf0nhi8dd" path="res://images/usable items/other planting items/pot_empty.png" id="1_fkm38"]
+[ext_resource type="Script" uid="uid://csusqn6c0h5si" path="res://scripts/data/ItemData.gd" id="2_03wrm"]
+
+[resource]
+script = ExtResource("2_03wrm")
+id = "pot"
+item_name = "Flower Pot"
+icon = ExtResource("1_fkm38")
+metadata/_custom_type_script = "uid://csusqn6c0h5si"

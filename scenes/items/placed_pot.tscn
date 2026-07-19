@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://mjkf3us3ilhp"]
+
+[ext_resource type="Script" uid="uid://c08kxt7in015m" path="res://scripts/items/PlacedObject.gd" id="1_5hsry"]
+
+[node name="PlacedPot" type="Node2D" unique_id=508038533]
+script = ExtResource("1_5hsry")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=718278042]
+script = ExtResource("1_5hsry")

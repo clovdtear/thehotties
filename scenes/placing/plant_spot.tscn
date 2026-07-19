@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c57yrlu7ahh0"]
+
+[ext_resource type="Script" uid="uid://dsds6ujrekaj6" path="res://scripts/environment/PlantSpot.gd" id="1_c6e2k"]
+
+[node name="PlantSpot" type="Control" unique_id=857152094]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 80.0
+offset_bottom = 80.0
+script = ExtResource("1_c6e2k")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=778120746]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 80.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0.49803922)

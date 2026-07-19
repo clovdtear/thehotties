@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dv4swgx7s1lab"]
 
-[ext_resource type="Texture2D" uid="uid://ds85ykh6jdnl6" path="res://images/walls/front.jpg" id="1_wdiup"]
+[ext_resource type="Texture2D" uid="uid://7ke8eyadst6t" path="res://images/walls/the_table.png" id="1_wdiup"]
 
 [node name="WallLeft" type="Node2D" unique_id=1433328317]
 
@@ -8,8 +8,3 @@
 position = Vector2(576, 324)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_wdiup")
-
-[node name="TextEdit" type="TextEdit" parent="." unique_id=619731316]
-offset_right = 251.0
-offset_bottom = 111.0
-text = "LEFT"

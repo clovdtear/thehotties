@@ -1,39 +1,21 @@
 [gd_scene format=3 uid="uid://d4jkdwcdnn60o"]
 
-[ext_resource type="Texture2D" uid="uid://ds85ykh6jdnl6" path="res://images/walls/front.jpg" id="1_k0g54"]
-[ext_resource type="Texture2D" uid="uid://ry3nsokj5bx2" path="res://images/furniture/plant_shelves.png" id="2_fbhmu"]
-[ext_resource type="Script" uid="uid://djoj50uie4hoj" path="res://scripts/environment/ItemDropTarget.gd" id="3_3c0jw"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_446vt"]
-size = Vector2(158, 136.5)
+[ext_resource type="Texture2D" uid="uid://cjvhdoqqu2wwt" path="res://images/walls/SHELVES.png" id="1_3c0jw"]
+[ext_resource type="PackedScene" uid="uid://c57yrlu7ahh0" path="res://scenes/placing/plant_spot.tscn" id="3_3c0jw"]
+[ext_resource type="PackedScene" uid="uid://mjkf3us3ilhp" path="res://scenes/items/placed_pot.tscn" id="4_0m821"]
 
 [node name="WallBack" type="Node2D" unique_id=839691736]
 
 [node name="Background" type="Sprite2D" parent="." unique_id=211531626]
 position = Vector2(576, 324)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_k0g54")
-
-[node name="TextEdit" type="TextEdit" parent="." unique_id=39426923]
-offset_right = 251.0
-offset_bottom = 111.0
-text = "BACK"
+texture = ExtResource("1_3c0jw")
 
 [node name="Furniture" type="Node2D" parent="." unique_id=1447652485]
 
-[node name="Plant_Shelves" type="Sprite2D" parent="Furniture" unique_id=2010641676]
-z_index = 5
-position = Vector2(570, 380)
-scale = Vector2(2, 1.5)
-texture = ExtResource("2_fbhmu")
-
-[node name="ItemDropTarget" type="Area2D" parent="Furniture" unique_id=1750267513]
-z_index = 20
-script = ExtResource("3_3c0jw")
-metadata/_custom_type_script = "uid://djoj50uie4hoj"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Furniture/ItemDropTarget" unique_id=1525787912]
-z_index = 20
-position = Vector2(265, 366)
-shape = SubResource("RectangleShape2D_446vt")
-script = ExtResource("3_3c0jw")
+[node name="PlantSpot" parent="Furniture" unique_id=857152094 instance=ExtResource("3_3c0jw")]
+offset_left = 150.0
+offset_top = 305.0
+offset_right = 230.0
+offset_bottom = 385.0
+placed_pot_scene = ExtResource("4_0m821")

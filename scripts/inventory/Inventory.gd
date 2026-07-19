@@ -26,3 +26,15 @@ func swap_slots(index_a: int, other: Inventory, index_b: int):
 	slots[index_a] = other.slots[index_b]
 
 	other.slots[index_b] = temp
+
+
+func remove_one(index: int):
+	var stack = slots[index]
+
+	if stack == null:
+		return
+
+	stack.remove_amount(1)
+
+	if stack.is_empty():
+		slots[index] = null

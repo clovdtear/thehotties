@@ -5,15 +5,18 @@
 
 [node name="StorageInventory" type="Panel" unique_id=921784344]
 z_index = 20
-offset_right = 416.0
-offset_bottom = 248.0
+custom_minimum_size = Vector2(420, 253)
+offset_right = 420.0
+offset_bottom = 253.0
 script = ExtResource("1_rbjhl")
 
 [node name="GridContainer" type="GridContainer" parent="." unique_id=1609113288]
 z_index = 20
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 420.0
+offset_bottom = 251.0
 columns = 5
 
 [node name="Slot0" parent="GridContainer" unique_id=342407910 instance=ExtResource("2_l1gmm")]

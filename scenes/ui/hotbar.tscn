@@ -5,9 +5,9 @@
 
 [node name="Hotbar" type="HBoxContainer" unique_id=739085315]
 z_index = 20
-custom_minimum_size = Vector2(700, 100)
-offset_right = 40.0
-offset_bottom = 40.0
+custom_minimum_size = Vector2(584, 80)
+offset_right = 584.0
+offset_bottom = 80.0
 script = ExtResource("1_m1s8h")
 
 [node name="Slot0" parent="." unique_id=342407910 instance=ExtResource("2_6hkf2")]

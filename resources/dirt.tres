@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cyriyxffpxyoy"]
+
+[ext_resource type="Texture2D" uid="uid://brnyjoxre740b" path="res://images/usable items/other planting items/dirt.png" id="1_f8jer"]
+[ext_resource type="Script" uid="uid://csusqn6c0h5si" path="res://scripts/data/ItemData.gd" id="2_8r6dj"]
+
+[resource]
+script = ExtResource("2_8r6dj")
+id = "dirt"
+item_name = "Dirt"
+icon = ExtResource("1_f8jer")
+metadata/_custom_type_script = "uid://csusqn6c0h5si"

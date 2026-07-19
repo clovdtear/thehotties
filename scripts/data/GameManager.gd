@@ -4,9 +4,10 @@ extends Node
 signal inventory_changed
 
 
-var pot = preload("res://resources/items/pot.tres")
-var dirt = preload("res://resources/items/dirt.tres")
-var seed_item = preload("res://resources/items/seed.tres")
+var pot = preload("res://resources/pot.tres")
+var dirt = preload("res://resources/dirt.tres")
+var seed_item = preload("res://resources/seed.tres")
+var watering_can = preload("res://resources/watering_can.tres")
 
 
 var hotbar: Inventory
@@ -20,7 +21,7 @@ func _ready():
 
 	hotbar.set_slot(
 		0,
-		ItemStack.new(pot,1)
+		ItemStack.new(pot,2)
 	)
 
 	hotbar.set_slot(
@@ -35,7 +36,12 @@ func _ready():
 	
 	hotbar.set_slot(
 		3,
-		ItemStack.new(seed_item,8)
+		ItemStack.new(watering_can,1)
+	)
+	
+	hotbar.set_slot(
+		4,
+		ItemStack.new(pot,1)
 	)
 
 

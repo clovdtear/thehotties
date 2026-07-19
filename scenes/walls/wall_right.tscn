@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://c2kiam0wcmeao"]
 
-[ext_resource type="Texture2D" uid="uid://ds85ykh6jdnl6" path="res://images/walls/front.jpg" id="1_6rjib"]
-[ext_resource type="Texture2D" uid="uid://bvjm40qfj81a6" path="res://images/furniture/storage.png" id="2_xhj5y"]
+[ext_resource type="Texture2D" uid="uid://b8xavph5ayq32" path="res://images/walls/storage.png" id="1_6rjib"]
 
 [node name="WallRight" type="Node2D" unique_id=1427750135]
 
@@ -10,17 +9,4 @@ position = Vector2(576, 324)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_6rjib")
 
-[node name="TextEdit" type="TextEdit" parent="." unique_id=877630148]
-offset_right = 251.0
-offset_bottom = 111.0
-text = "RIGHT"
-
 [node name="Furniture" type="Node2D" parent="." unique_id=659770522]
-
-[node name="Objects" type="Node2D" parent="." unique_id=804571872]
-
-[node name="Storage" type="Sprite2D" parent="Objects" unique_id=1797953389]
-z_index = 10
-position = Vector2(570, 327)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_xhj5y")
